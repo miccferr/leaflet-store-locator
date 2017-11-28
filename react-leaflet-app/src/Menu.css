@@ -694,3 +694,8 @@ a.navbar-link.is-active {
     background-color: transparent; }
   .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: whitesmoke; } }
+
+.navbar-dropdown.is-boxed {
+  z-index: 9999;
+  max-height: 200px;
+  overflow: scroll; }

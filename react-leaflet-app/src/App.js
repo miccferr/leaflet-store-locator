@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import * as initialState from "./data.json";
 import Menu from "./Menu.js";
+import MyMap from "./Map.js";
 
 class App extends Component {
   constructor(props) {
@@ -14,11 +15,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Menu />
+          <Menu data={this.state.features} />
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div id="map-container">
+          <MyMap data={this.state.features} />
+        </div>
       </div>
     );
   }

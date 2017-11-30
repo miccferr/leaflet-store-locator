@@ -3,7 +3,31 @@ import L from "leaflet";
 import { Popup, Marker } from "react-leaflet";
 
 const colorURL = c => `https://api.tiles.mapbox.com/v3/marker/pin-m-circle+${c}@2x.png`;
+const filterColor = f => {
+  let color;
+  switch (f.properties.resseller_type) {
+    case "E-commerce and Store":
+      color = colorURL("2c7bb6");
+      break;
+    case "Distributor":
+      color = colorURL("d7191c");
+      break;
+    case "Factory Store":
+      color = colorURL("99cc99");
+      break;
+    case "Factory Outlet":
+      color = colorURL("ffffbf");
+      break;
+    case "Retail":
+      color = colorURL("fdae61");
+      break;
+    case "Head Quarter":
+      color = colorURL("abd9e9");
+      break;
+  }
 
+  return color;
+};
 const myIcon = color =>
   L.icon({
     iconUrl: color,
@@ -15,24 +39,9 @@ const myIcon = color =>
     shadowAnchor: [22, 94],
   });
 
-const Markers = (f, i) => {
-  let color;
-  switch (f.properties.resseller_type) {
-    case "E-commerce and Store":
-      color = colorURL("2c7bb6");
-    case "Distributor":
-      color = colorURL("d7191c");
-    case "Factory Store":
-      color = colorURL("99cc99");
-    case "Factory Outlet":
-      color = colorURL("ffffbf");
-    case "Retail":
-      color = colorURL("fdae61");
-    case "Head Quarter":
-      color = colorURL("abd9e9");
-    default:
-      color = colorURL("ff8af2");
-  }
+const Markers = (f, i, props) => {
+  console.log("props.resellerTypeClicked: ", props.resellerTypeClicked);
+  let color = props.resellerTypeClicked ? filterColor(f) : colorURL("ff8af2");
 
   return (
     <Marker

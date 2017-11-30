@@ -8,7 +8,7 @@ const position = [51.505, -0.09];
 const MyMap = props => (
   <Map
     center={position}
-    zoom={13}
+    zoom={2}
     style={{
       height: `${window.innerHeight}px`,
       width: `${window.innerWidth}px`,
@@ -25,7 +25,8 @@ const MyMap = props => (
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
     />
-    {props.data.map((f, i) => Markers(f, i))}
+
+    {props.data.map((f, i) => Markers(f, i, props))}
   </Map>
 );
 

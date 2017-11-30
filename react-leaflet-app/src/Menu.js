@@ -2,18 +2,40 @@ import React, { Component } from "react";
 import "./Menu.css";
 
 // const geoSubMenu = () =>
-
+const Test = text => <b>{JSON.stringify(text.text)}</b>;
 class Menu extends Component {
   constructor(props) {
-    super(props);
-    this.state = { data: props.data };
+    super();
     this._createSubMenu = function(type) {
-      let filtered = [...new Set(this.state.data.map(f => f.properties[type].toUpperCase()))];
+      let filtered = [...new Set(props.data.map(f => f.properties[type]))];
       let items = filtered.map((f, i) => (
-        <a key={i} className="navbar-item" href="/documentation/overview/start/">
+        <a
+          key={i}
+          className="navbar-item"
+          href="#"
+          onClick={e => {
+            e.preventDefault();
+            if (type == "resseller_type") {
+              if (!this.props.resellerTypeClicked) {
+                props.handleFlag();
+                props.handleChange(type, e);
+              } else {
+                props.handleChange(type, e);
+              }
+            } else {
+              if (!this.props.resellerTypeClicked) {
+                props.handleChange(type, e);
+              } else {
+                props.handleFlag();
+                props.handleChange(type, e);
+              }
+            }
+          }}
+        >
           {f}
         </a>
       ));
+      // this.setState({ data: filtered }
       return <div className="navbar-dropdown is-boxed">{items}</div>;
     };
   }
@@ -24,6 +46,8 @@ class Menu extends Component {
         <div className="navbar-brand">
           <h4 className="navbar-item" href="https://bulma.io">
             React Leaflet Store Locator
+            {console.log("PROOOOOPS", this.props)}
+            <Test text={this.props.resellerTypeClicked} />
           </h4>
           <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
             <span />
@@ -57,6 +81,9 @@ class Menu extends Component {
             </a>
             {this._createSubMenu("resseller_type")}
           </div>
+          <a className="navbar-item" href="#" onClick={() => this.props.resetState()}>
+            Reset Filters
+          </a>
         </div>
       </nav>
     );

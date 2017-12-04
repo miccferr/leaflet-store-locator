@@ -847,9 +847,6 @@
   .columns.is-variable.is-8 {
     --columnGap: 2rem; }
 
-body,
-html,
-#root,
 .App,
 .columns,
 .column {

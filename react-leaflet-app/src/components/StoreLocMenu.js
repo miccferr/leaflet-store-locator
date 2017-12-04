@@ -1,10 +1,10 @@
 import React from "react";
-import "./StoreLocMenuContainer.css";
+import "./StoreLocMenu.css";
 import StoreLocListItem from "./StoreLocListItem.js";
 
-const StoreLocMenuContainer = props => {
+const StoreLocMenu = props => {
   return (
-    <ul id="storeLocMenuContainer-list-cont" className="listings">
+    <ul id="StoreLocMenu-list-cont" className="listings">
       {props.storeLocs.map((f, i) => (
         <StoreLocListItem
           key={i}
@@ -18,4 +18,4 @@ const StoreLocMenuContainer = props => {
     </ul>
   );
 };
-export default StoreLocMenuContainer;
+export default StoreLocMenu;

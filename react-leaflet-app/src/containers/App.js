@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import * as initialState from "./data.json";
+import * as initialState from "./../data.json";
 import Menu from "./Menu.js";
-import MyMap from "./Map.js";
-import StoreLocMenuContainer from "./StoreLocMenuContainer.js";
+import MyMap from "./../components/Map.js";
+import StoreLocMenu from "./../components/StoreLocMenu.js";
 
 class App extends Component {
   constructor(props) {
@@ -55,7 +54,7 @@ class App extends Component {
             <h1 id="menu-loc-title" className="item ">
               Our locations
             </h1>
-            <StoreLocMenuContainer storeLocs={this.state.data} centerOnStore={this.centerOnStore} />
+            <StoreLocMenu storeLocs={this.state.data} centerOnStore={this.centerOnStore} />
           </div>
           <div className="column" />
           <div id="map-container">

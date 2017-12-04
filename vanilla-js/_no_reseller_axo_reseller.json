@@ -1,0 +1,2753 @@
+/* modify json */
+// var new_lat, new_lng;
+// for (var f=0; f<geojsonFeature.features.length; f++){ 
+//   new_lat = geojsonFeature.features[f].geometry.coordinates[1];
+//   new_lng = geojsonFeature.features[f].geometry.coordinates[0]; 
+//   geojsonFeature.features[f].geometry.coordinates[1]= new_lng;
+//   geojsonFeature.features[f].geometry.coordinates[0] = new_lat; 
+
+// }
+
+
+var geojsonFeature = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.509387,
+                    34.412066
+                ]
+            },
+            "properties": {
+                "loc_id": "16",
+                "business_name": "AXO",
+                "company_name": "AXO America",
+                "resseller_type": "",
+                "address": "26465 Summit Cir Santa Clarita, CA 91350 USA",
+                "zip": "91350",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.axo.com",
+                "email": "info@axo.com",
+                "phone": "1-877-AXO-RACE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.0916885,
+                    45.671786
+                ]
+            },
+            "properties": {
+                "loc_id": "19",
+                "business_name": "AXO Sport Spa",
+                "company_name": "AXO EMEA",
+                "resseller_type": "",
+                "address": "Via F. Filzi, 66, 31036 Istrana TV, Italy",
+                "zip": "31036",
+                "state_province": "Treviso",
+                "": "7",
+                "country": "Italy",
+                "website": "www.axosport.com",
+                "email": "info@axosport.it",
+                "phone": "+39 0422 83 23 00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.900222,
+                    42.345388
+                ]
+            },
+            "properties": {
+                "loc_id": "21",
+                "business_name": "Motorcycle Superstore",
+                "company_name": "Motorcycle Superstore",
+                "resseller_type": "",
+                "address": "2065 Lars Way, Medford, OR 97501 USA",
+                "zip": "97501",
+                "state_province": "OR",
+                "": "6",
+                "country": "USA",
+                "website": "www.motorcycle-superstore.com",
+                "email": "info@motorcycle-superstore.com",
+                "phone": "-774"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.757286,
+                    40.034664
+                ]
+            },
+            "properties": {
+                "loc_id": "22",
+                "business_name": "Rocky Mountain ATV, Inc.",
+                "company_name": "Rocky Mountain ATV, Inc.",
+                "resseller_type": "",
+                "address": "1551 American Way Payson, UT 84651 USA",
+                "zip": "84651",
+                "state_province": "UT",
+                "": "6",
+                "country": "USA",
+                "website": " http://www.rockymountainatvmc.com/home.do",
+                "email": "sales@rockymountainatv.com ",
+                "phone": "+1 800 336-5437"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.833048,
+                    34.168751
+                ]
+            },
+            "properties": {
+                "loc_id": "23",
+                "business_name": "BTO Sports",
+                "company_name": "BTO Sports",
+                "resseller_type": "",
+                "address": "77 Duesenberg Dr, Thousand Oaks, CA 91362 USA",
+                "zip": "91362",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.btosports.com",
+                "email": "info@btosports.com",
+                "phone": "+1-805 494-7194"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.598005,
+                    34.212419
+                ]
+            },
+            "properties": {
+                "loc_id": "24",
+                "business_name": "Global Moto Outlet",
+                "company_name": "Motocross Giant",
+                "resseller_type": "",
+                "address": "7801 Canoga Ave, Canoga Park, CA 91304 USA",
+                "zip": "91304",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.motocrossgiant.com/",
+                "email": "info@gmo1.com",
+                "phone": "-6057"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -94.582398,
+                    39.349711
+                ]
+            },
+            "properties": {
+                "loc_id": "25",
+                "business_name": "MotorcycleCloseouts, L.L.C. - MO Store",
+                "company_name": "MotorcycleCloseouts, L.L.C. - MO Store",
+                "resseller_type": "",
+                "address": "14123 Earthworks Dr, Smithville, MO 64089 USA",
+                "zip": "64089",
+                "state_province": "MO",
+                "": "6",
+                "country": "USA",
+                "website": "www.motorcyclecloseouts.com",
+                "email": "info@motorcyclecloseouts.com",
+                "phone": "-4691"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -94.8519378,
+                    38.9814935
+                ]
+            },
+            "properties": {
+                "loc_id": "26",
+                "business_name": "MotorcycleCloseouts, L.L.C. - KS Store",
+                "company_name": "MotorcycleCloseouts, L.L.C. - KS Store",
+                "resseller_type": "",
+                "address": "8168 Monticello Terrace, Shawnee, KS 66227 USA",
+                "zip": "66227",
+                "state_province": "KS",
+                "": "6",
+                "country": "USA",
+                "website": "www.motorcyclecloseouts.com",
+                "email": "info@motorcyclecloseouts.com",
+                "phone": "-4697"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9717537,
+                    33.7005536
+                ]
+            },
+            "properties": {
+                "loc_id": "27",
+                "business_name": "MS-Zone",
+                "company_name": "MS-Zone",
+                "resseller_type": "",
+                "address": "18045 Magnolia St, Fountain Valley, CA 92708 USA",
+                "zip": "92708",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": ".",
+                "email": ".",
+                "phone": "-11278"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.717869,
+                    38.327539
+                ]
+            },
+            "properties": {
+                "loc_id": "28",
+                "business_name": "Seismic Cycles, LLC",
+                "company_name": "Seismic Cycles, LLC",
+                "resseller_type": "",
+                "address": "661 W School St, Cotati, CA 94931 USA",
+                "zip": "94931",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.seismiccycles.com",
+                "email": "info@seismiccycles.com",
+                "phone": "-8773"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4103162,
+                    37.7753424
+                ]
+            },
+            "properties": {
+                "loc_id": "29",
+                "business_name": "SF Moto",
+                "company_name": "SF Moto",
+                "resseller_type": "",
+                "address": "275 8th St, San Francisco, CA 94103 USA",
+                "zip": "94103",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": ".",
+                "email": ".",
+                "phone": "-3801"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.08862,
+                    37.675453
+                ]
+            },
+            "properties": {
+                "loc_id": "39",
+                "business_name": "Cycle Gear #2",
+                "company_name": "Cycle Gear #2",
+                "resseller_type": "",
+                "address": "22249 Mission Blvd, Hayward, CA 94541 USA",
+                "zip": "94541",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(510) 888-9100"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.2292447,
+                    37.4816119
+                ]
+            },
+            "properties": {
+                "loc_id": "40",
+                "business_name": "Cycle Gear #7",
+                "company_name": "Cycle Gear #7",
+                "resseller_type": "",
+                "address": "1326 El Camino Real, Redwood City, CA 94063 USA",
+                "zip": "94063",
+                "state_province": "CA",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(650) 365-1100"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.563273,
+                    34.377446
+                ]
+            },
+            "properties": {
+                "loc_id": "41",
+                "business_name": "Cycle Gear #9",
+                "company_name": "Cycle Gear #9",
+                "resseller_type": "",
+                "address": "24508 Lyons Ave, Newhall, CA 91321 USA",
+                "zip": "91321",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(661) 255-6522"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.9148749,
+                    37.3176388
+                ]
+            },
+            "properties": {
+                "loc_id": "42",
+                "business_name": "Cycle Gear #10",
+                "company_name": "Cycle Gear #10",
+                "resseller_type": "",
+                "address": "1515 Parkmoor Ave, San Jose, CA 95128 USA",
+                "zip": "95128",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(408) 288-5051"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.5088085,
+                    41.8143312
+                ]
+            },
+            "properties": {
+                "loc_id": "43",
+                "business_name": "Cycle Gear #11",
+                "company_name": "Cycle Gear #11",
+                "resseller_type": "",
+                "address": "63 Tolland Turnpike, Manchester, CT 6040 USA",
+                "zip": "6040",
+                "state_province": "CT",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(860) 647-1022"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.791112,
+                    36.798733
+                ]
+            },
+            "properties": {
+                "loc_id": "44",
+                "business_name": "Cycle Gear #12",
+                "company_name": "Cycle Gear #12",
+                "resseller_type": "",
+                "address": "4455 N. Blackstone Ave, Fresno, CA 93726 USA",
+                "zip": "93726",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(559) 221-7600"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.2080698,
+                    36.1686838
+                ]
+            },
+            "properties": {
+                "loc_id": "45",
+                "business_name": "Cycle Gear #13",
+                "company_name": "Cycle Gear #13",
+                "resseller_type": "",
+                "address": "344 S. Decatur Blvd, Las Vegas, NV 89107 USA",
+                "zip": "89107",
+                "state_province": "NV",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(702) 877-4327"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9199035,
+                    33.8626817
+                ]
+            },
+            "properties": {
+                "loc_id": "46",
+                "business_name": "Cycle Gear #14",
+                "company_name": "Cycle Gear #14",
+                "resseller_type": "",
+                "address": "1391 S. Lemon St, Fullerton, CA 92832 USA",
+                "zip": "92832",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(714) 525-4205"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.840583,
+                    33.396047
+                ]
+            },
+            "properties": {
+                "loc_id": "47",
+                "business_name": "Cycle Gear #15",
+                "company_name": "Cycle Gear #15",
+                "resseller_type": "",
+                "address": "1040 S. Country Club Drive, Mesa, AZ 85210 USA",
+                "zip": "85210",
+                "state_province": "AZ",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(480) 969-5555"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.036883,
+                    33.6068969
+                ]
+            },
+            "properties": {
+                "loc_id": "48",
+                "business_name": "Cycle Gear #16",
+                "company_name": "Cycle Gear #16",
+                "resseller_type": "",
+                "address": "13220 N. Cave Creek Rd, Phoenix, AZ 85022 USA",
+                "zip": "85022",
+                "state_province": "AZ",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(602) 971-1630"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4699804,
+                    47.2225212
+                ]
+            },
+            "properties": {
+                "loc_id": "49",
+                "business_name": "Cycle Gear #17",
+                "company_name": "Cycle Gear #17",
+                "resseller_type": "",
+                "address": "2501 S. 38th St, Tacoma, WA 98409 USA",
+                "zip": "98409",
+                "state_province": "WA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(253) 475-5444"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.315694,
+                    33.789206
+                ]
+            },
+            "properties": {
+                "loc_id": "50",
+                "business_name": "Cycle Gear #18",
+                "company_name": "Cycle Gear #18",
+                "resseller_type": "",
+                "address": "2040 Pacific Coast Hwy Unit A, Lomita, CA 90717 USA",
+                "zip": "90717",
+                "state_province": "CA",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(310) 530-3500"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.220886,
+                    47.318907
+                ]
+            },
+            "properties": {
+                "loc_id": "51",
+                "business_name": "Cycle Gear #19",
+                "company_name": "Cycle Gear #19",
+                "resseller_type": "",
+                "address": "1210 Auburn Way North, Auburn, WA 98002 USA",
+                "zip": "98002",
+                "state_province": "WA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(253) 876-9999"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.120315,
+                    33.132781
+                ]
+            },
+            "properties": {
+                "loc_id": "52",
+                "business_name": "Cycle Gear #20",
+                "company_name": "Cycle Gear #20",
+                "resseller_type": "",
+                "address": "630 Nordahl Rd, San Marcos, CA 92069 USA",
+                "zip": "92069",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(760) 233-2299"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.3449467,
+                    38.660759
+                ]
+            },
+            "properties": {
+                "loc_id": "53",
+                "business_name": "Cycle Gear #21",
+                "company_name": "Cycle Gear #21",
+                "resseller_type": "",
+                "address": "5122 Madison Ave, Sacramento, CA 95841 USA",
+                "zip": "95841",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(916) 338-1649"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.571706,
+                    45.51887
+                ]
+            },
+            "properties": {
+                "loc_id": "54",
+                "business_name": "Cycle Gear #22",
+                "company_name": "Cycle Gear #22",
+                "resseller_type": "",
+                "address": "8930 S.E. Stark St, Portland, OR 97216 USA",
+                "zip": "97216",
+                "state_province": "OR",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(503) 257-7047"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.9719523,
+                    32.250359
+                ]
+            },
+            "properties": {
+                "loc_id": "55",
+                "business_name": "Cycle Gear #23",
+                "company_name": "Cycle Gear #23",
+                "resseller_type": "",
+                "address": "2 West Grant Rd, Tucson, AZ 85705 USA",
+                "zip": "85705",
+                "state_province": "AZ",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(520) 882-8111"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.024316,
+                    35.380546
+                ]
+            },
+            "properties": {
+                "loc_id": "56",
+                "business_name": "Cycle Gear #24",
+                "company_name": "Cycle Gear #24",
+                "resseller_type": "",
+                "address": "1921 24th St, Bakersfield, CA 93301 USA",
+                "zip": "93301",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(661) 634-9200"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1759952,
+                    34.2283767
+                ]
+            },
+            "properties": {
+                "loc_id": "57",
+                "business_name": "Cycle Gear #25",
+                "company_name": "Cycle Gear #25",
+                "resseller_type": "",
+                "address": "2381 Vineyard Ave, Oxnard, CA 93030 USA",
+                "zip": "93030",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(805) 981-8881"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.155516,
+                    32.818197
+                ]
+            },
+            "properties": {
+                "loc_id": "58",
+                "business_name": "Cycle Gear #26",
+                "company_name": "Cycle Gear #26",
+                "resseller_type": "",
+                "address": "4150 Convoy St, San Diego, CA 92111 USA",
+                "zip": "92111",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(858) 565-2500"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.7290512,
+                    33.6292796
+                ]
+            },
+            "properties": {
+                "loc_id": "59",
+                "business_name": "Cycle Gear #27",
+                "company_name": "Cycle Gear #27",
+                "resseller_type": "",
+                "address": "23052 Lake Forest Dr Ste A-2, Laguna Hills, CA 92653 USA",
+                "zip": "92653",
+                "state_province": "CA",
+                "": "10",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(949) 581-7444"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.6022335,
+                    34.193775
+                ]
+            },
+            "properties": {
+                "loc_id": "60",
+                "business_name": "Cycle Gear #28",
+                "company_name": "Cycle Gear #28",
+                "resseller_type": "",
+                "address": "21725 Vanowen St, Canoga Park, CA 91303 USA",
+                "zip": "91303",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(818) 676-0003"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.907689,
+                    37.6996776
+                ]
+            },
+            "properties": {
+                "loc_id": "61",
+                "business_name": "Cycle Gear #29",
+                "company_name": "Cycle Gear #29",
+                "resseller_type": "",
+                "address": "5755 Johnson Dr, Pleasanton, CA 94588 USA",
+                "zip": "94588",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(925) 251-1110"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -106.589165,
+                    35.104704
+                ]
+            },
+            "properties": {
+                "loc_id": "62",
+                "business_name": "Cycle Gear #30",
+                "company_name": "Cycle Gear #30",
+                "resseller_type": "",
+                "address": "5000 Cutler Ave, NE, Albuquerque, NM 87110 USA",
+                "zip": "87110",
+                "state_province": "NM",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(505) 830-4500"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.7386946,
+                    33.0208716
+                ]
+            },
+            "properties": {
+                "loc_id": "63",
+                "business_name": "Cycle Gear #31",
+                "company_name": "Cycle Gear #31",
+                "resseller_type": "",
+                "address": "2301 N. Central Expwy, Space 182, Plano, TX 75075 USA",
+                "zip": "75075",
+                "state_province": "TX",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(214) 473-8044"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.727708,
+                    30.372642
+                ]
+            },
+            "properties": {
+                "loc_id": "64",
+                "business_name": "Cycle Gear #32",
+                "company_name": "Cycle Gear #32",
+                "resseller_type": "",
+                "address": "9070 Research Blvd, Space 202, Austin, TX 78758 USA",
+                "zip": "78758",
+                "state_province": "TX",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(512) 302-0700"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.176475,
+                    33.530025
+                ]
+            },
+            "properties": {
+                "loc_id": "65",
+                "business_name": "Cycle Gear #33",
+                "company_name": "Cycle Gear #33",
+                "resseller_type": "",
+                "address": "26755 Jefferson Ave, Suite C-2, Murrieta, CA 92562 USA",
+                "zip": "92562",
+                "state_province": "CA",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(951) 600-0097"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.5618028,
+                    35.5256658
+                ]
+            },
+            "properties": {
+                "loc_id": "66",
+                "business_name": "Cycle Gear #34",
+                "company_name": "Cycle Gear #34",
+                "resseller_type": "",
+                "address": "2717 Northwest Expressway, Oklahoma City, OK 73112 USA",
+                "zip": "73112",
+                "state_province": "OK",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(405) 842-0111"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.4411095,
+                    32.7294865
+                ]
+            },
+            "properties": {
+                "loc_id": "67",
+                "business_name": "Cycle Gear #35",
+                "company_name": "Cycle Gear #35",
+                "resseller_type": "",
+                "address": "3032 Alta Mere Drive, Fort Worth, TX 76116 USA",
+                "zip": "76116",
+                "state_province": "TX",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(817) 696-9700"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.239993,
+                    29.6373846
+                ]
+            },
+            "properties": {
+                "loc_id": "68",
+                "business_name": "Cycle Gear #36",
+                "company_name": "Cycle Gear #36",
+                "resseller_type": "",
+                "address": "10900 Gulf Freeway, Suite C, Houston (A), TX 77034 USA",
+                "zip": "77034",
+                "state_province": "TX",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(713) 941-3364"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.713991,
+                    38.404415
+                ]
+            },
+            "properties": {
+                "loc_id": "69",
+                "business_name": "Cycle Gear #37",
+                "company_name": "Cycle Gear #37",
+                "resseller_type": "",
+                "address": "3011 Santa Rosa Ave, Suite B, Santa Rosa, CA 95407 USA",
+                "zip": "95407",
+                "state_province": "CA",
+                "": "10",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(707) 522-1320"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.031619,
+                    37.657081
+                ]
+            },
+            "properties": {
+                "loc_id": "70",
+                "business_name": "Cycle Gear #38",
+                "company_name": "Cycle Gear #38",
+                "resseller_type": "",
+                "address": "1521 N. Carpenter Road Suite F3, Modesto, CA 95351 USA",
+                "zip": "95351",
+                "state_province": "CA",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(209) 576-0201"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.411427,
+                    29.924231
+                ]
+            },
+            "properties": {
+                "loc_id": "71",
+                "business_name": "Cycle Gear #39",
+                "company_name": "Cycle Gear #39",
+                "resseller_type": "",
+                "address": "10998 North Freeway Suite D, Houston (G), TX 77037 USA",
+                "zip": "77037",
+                "state_province": "TX",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(281) 448-3700"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4127413,
+                    37.7706226
+                ]
+            },
+            "properties": {
+                "loc_id": "72",
+                "business_name": "Cycle Gear #40",
+                "company_name": "Cycle Gear #40",
+                "resseller_type": "",
+                "address": "1500 Harrison Street, San Francisco, CA 94103 USA",
+                "zip": "94103",
+                "state_province": "CA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(415) 487-2710"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.56938,
+                    29.539353
+                ]
+            },
+            "properties": {
+                "loc_id": "73",
+                "business_name": "Cycle Gear #41",
+                "company_name": "Cycle Gear #41",
+                "resseller_type": "",
+                "address": "9975 IH-10 West, San Antonio, TX 78230 USA",
+                "zip": "78230",
+                "state_province": "TX",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(210) 558-8700"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.1462307,
+                    32.836979
+                ]
+            },
+            "properties": {
+                "loc_id": "74",
+                "business_name": "Cycle Gear #42",
+                "company_name": "Cycle Gear #42",
+                "resseller_type": "",
+                "address": "1424-B Airport Freeway, Bedford, TX 76022 USA",
+                "zip": "76022",
+                "state_province": "TX",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(817) 545-7939"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.4780703,
+                    33.8928663
+                ]
+            },
+            "properties": {
+                "loc_id": "75",
+                "business_name": "Cycle Gear #43",
+                "company_name": "Cycle Gear #43",
+                "resseller_type": "",
+                "address": "2441 Cobb Parkway, Smyrna, GA 30080 USA",
+                "zip": "30080",
+                "state_province": "GA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(770) 272-9873"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.993332,
+                    33.97456
+                ]
+            },
+            "properties": {
+                "loc_id": "76",
+                "business_name": "Cycle Gear #44",
+                "company_name": "Cycle Gear #44",
+                "resseller_type": "",
+                "address": "722 Collins Hill Road, Lawrenceville, GA 30045 USA",
+                "zip": "30045",
+                "state_province": "GA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(678) 225-0131"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.9024459,
+                    36.1044285
+                ]
+            },
+            "properties": {
+                "loc_id": "77",
+                "business_name": "Cycle Gear #45",
+                "company_name": "Cycle Gear #45",
+                "resseller_type": "",
+                "address": "6701-A East 41st Street, Tulsa, OK 74145 USA",
+                "zip": "74145",
+                "state_province": "OK",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(918) 384-0608"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.3248043,
+                    28.5532877
+                ]
+            },
+            "properties": {
+                "loc_id": "78",
+                "business_name": "Cycle Gear #46",
+                "company_name": "Cycle Gear #46",
+                "resseller_type": "",
+                "address": "5032 E. Colonial Drive, Orlando, FL 32803 USA",
+                "zip": "32803",
+                "state_province": "FL",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(321) 299-9903"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9666795,
+                    32.8086835
+                ]
+            },
+            "properties": {
+                "loc_id": "79",
+                "business_name": "Cycle Gear #47",
+                "company_name": "Cycle Gear #47",
+                "resseller_type": "",
+                "address": "450 Fletcher Pkwy, Suite 116, El Cajon, CA 92020 USA",
+                "zip": "92020",
+                "state_province": "CA",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(619) 444-7151"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.696887,
+                    35.116743
+                ]
+            },
+            "properties": {
+                "loc_id": "80",
+                "business_name": "Cycle Gear #48",
+                "company_name": "Cycle Gear #48",
+                "resseller_type": "",
+                "address": "11328 'B' East Independence Blvd, Matthews, NC 28105 USA",
+                "zip": "28105",
+                "state_province": "NC",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(704) 846-0440"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.356868,
+                    34.882595
+                ]
+            },
+            "properties": {
+                "loc_id": "81",
+                "business_name": "Cycle Gear #49",
+                "company_name": "Cycle Gear #49",
+                "resseller_type": "",
+                "address": "2017 Wade Hampton Blvd, Greenville, SC 29615 USA",
+                "zip": "29615",
+                "state_province": "SC",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(864) 322-6626"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.5047772,
+                    30.3093218
+                ]
+            },
+            "properties": {
+                "loc_id": "82",
+                "business_name": "Cycle Gear #50",
+                "company_name": "Cycle Gear #50",
+                "resseller_type": "",
+                "address": "11702 Beach Blvd Ste. 105 & 106, Jacksonville, FL 32246 USA",
+                "zip": "32246",
+                "state_province": "FL",
+                "": "10",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(904) 564-9800"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.682363,
+                    27.838043
+                ]
+            },
+            "properties": {
+                "loc_id": "83",
+                "business_name": "Cycle Gear #51",
+                "company_name": "Cycle Gear #51",
+                "resseller_type": "",
+                "address": "7201 US Highway 19 North, Pinellas Park, FL 33781 USA",
+                "zip": "33781",
+                "state_province": "FL",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(727) 521-6018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.067341,
+                    37.985659
+                ]
+            },
+            "properties": {
+                "loc_id": "84",
+                "business_name": "Cycle Gear #52",
+                "company_name": "Cycle Gear #52",
+                "resseller_type": "",
+                "address": "5749 Pacheco Blvd, Pacheco, CA 94553 USA",
+                "zip": "94553",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(925) 680-8018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.649686,
+                    35.731646
+                ]
+            },
+            "properties": {
+                "loc_id": "85",
+                "business_name": "Cycle Gear #53",
+                "company_name": "Cycle Gear #53",
+                "resseller_type": "",
+                "address": "336 Tryon Road, Raleigh, NC 27603 USA",
+                "zip": "27603",
+                "state_province": "NC",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(919) 329-7858"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.164632,
+                    25.926272
+                ]
+            },
+            "properties": {
+                "loc_id": "86",
+                "business_name": "Cycle Gear #54",
+                "company_name": "Cycle Gear #54",
+                "resseller_type": "",
+                "address": "1765 NE 163rd St, N. Miami Beach, FL 33162 USA",
+                "zip": "33162",
+                "state_province": "FL",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(305) 944-1632"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.4592765,
+                    28.069229
+                ]
+            },
+            "properties": {
+                "loc_id": "87",
+                "business_name": "Cycle Gear #55",
+                "company_name": "Cycle Gear #55",
+                "resseller_type": "",
+                "address": "112 W. Fletcher Avenue, Tampa, FL 33612 USA",
+                "zip": "33612",
+                "state_province": "FL",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(813) 932-9300"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.313065,
+                    36.311049
+                ]
+            },
+            "properties": {
+                "loc_id": "88",
+                "business_name": "Cycle Gear #56",
+                "company_name": "Cycle Gear #56",
+                "resseller_type": "",
+                "address": "2226 S Mooney Blvd Suite A-1, Visalia, CA 93277 USA",
+                "zip": "93277",
+                "state_province": "CA",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(559) 749-0667"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.1115795,
+                    26.6896807
+                ]
+            },
+            "properties": {
+                "loc_id": "89",
+                "business_name": "Cycle Gear #57",
+                "company_name": "Cycle Gear #57",
+                "resseller_type": "",
+                "address": "846 North Military Trail, W Palm Beach, FL 33415 USA",
+                "zip": "33415",
+                "state_province": "FL",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(561) 697-2660"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.6983987,
+                    36.2941149
+                ]
+            },
+            "properties": {
+                "loc_id": "90",
+                "business_name": "Cycle Gear #58",
+                "company_name": "Cycle Gear #58",
+                "resseller_type": "",
+                "address": "1677 Gallatin Pike North, Madison, TN 37115 USA",
+                "zip": "37115",
+                "state_province": "TN",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(615) 612-6234"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.5673356,
+                    34.6502796
+                ]
+            },
+            "properties": {
+                "loc_id": "91",
+                "business_name": "Cycle Gear #59",
+                "company_name": "Cycle Gear #59",
+                "resseller_type": "",
+                "address": "8922 Memorial Parkway SW, Huntsville, AL 35802 USA",
+                "zip": "35802",
+                "state_province": "AL",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(256) 883-1691"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.0881423,
+                    35.9155264
+                ]
+            },
+            "properties": {
+                "loc_id": "92",
+                "business_name": "Cycle Gear #60",
+                "company_name": "Cycle Gear #60",
+                "resseller_type": "",
+                "address": "266 North Peters Road, Knoxville, TN 37923 USA",
+                "zip": "37923",
+                "state_province": "TN",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(865) 560-5657"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.982642,
+                    44.929325
+                ]
+            },
+            "properties": {
+                "loc_id": "93",
+                "business_name": "Cycle Gear #61",
+                "company_name": "Cycle Gear #61",
+                "resseller_type": "",
+                "address": "180 Lancaster N.E., Salem, OR 97301 USA",
+                "zip": "97301",
+                "state_province": "OR",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(503) 589-1515"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.358009,
+                    43.618938
+                ]
+            },
+            "properties": {
+                "loc_id": "94",
+                "business_name": "Cycle Gear #62",
+                "company_name": "Cycle Gear #62",
+                "resseller_type": "",
+                "address": "3055 E. Fairview Ave, Meridian, ID 83642 USA",
+                "zip": "83642",
+                "state_province": "ID",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(208) 887-4942"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3626669,
+                    40.5703567
+                ]
+            },
+            "properties": {
+                "loc_id": "95",
+                "business_name": "Cycle Gear #63",
+                "company_name": "Cycle Gear #63",
+                "resseller_type": "",
+                "address": "2611 Bechelli Ln, Redding, CA 96002 USA",
+                "zip": "96002",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(530) 223-9007"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.3396155,
+                    28.7932234
+                ]
+            },
+            "properties": {
+                "loc_id": "96",
+                "business_name": "Cycle Gear #64",
+                "company_name": "Cycle Gear #64",
+                "resseller_type": "",
+                "address": "1157 Rinehart Rd, Sanford, FL 32771 USA",
+                "zip": "32771",
+                "state_province": "FL",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(407) 324-4820"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.10032,
+                    36.076317
+                ]
+            },
+            "properties": {
+                "loc_id": "97",
+                "business_name": "Cycle Gear #65",
+                "company_name": "Cycle Gear #65",
+                "resseller_type": "",
+                "address": "6280 S. Pecos Rd., Las Vegas (E), NV 89120 USA",
+                "zip": "89120",
+                "state_province": "NV",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(702) 435-0635"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.51361,
+                    29.7044535
+                ]
+            },
+            "properties": {
+                "loc_id": "98",
+                "business_name": "Cycle Gear #66",
+                "company_name": "Cycle Gear #66",
+                "resseller_type": "",
+                "address": "7204 Southwest Fwy, Houston (S), TX 77074 USA",
+                "zip": "77074",
+                "state_province": "TX",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(713) 271-5201"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.647426,
+                    33.597523
+                ]
+            },
+            "properties": {
+                "loc_id": "100",
+                "business_name": "Cycle Gear #68",
+                "company_name": "Cycle Gear #68",
+                "resseller_type": "",
+                "address": "1930 Edwards Lake Road Suite 126, Trussville, AL 35235 USA",
+                "zip": "35235",
+                "state_province": "AL",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(205) 655-5055"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1399863,
+                    34.601675
+                ]
+            },
+            "properties": {
+                "loc_id": "101",
+                "business_name": "Cycle Gear #69",
+                "company_name": "Cycle Gear #69",
+                "resseller_type": "",
+                "address": "550 W. Rancho Vista Blvd Suite B, Palmdale, CA 93551 USA",
+                "zip": "93551",
+                "state_province": "CA",
+                "": "10",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(661) 273-6113"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.8893355,
+                    40.5443149
+                ]
+            },
+            "properties": {
+                "loc_id": "102",
+                "business_name": "Cycle Gear #70",
+                "company_name": "Cycle Gear #70",
+                "resseller_type": "",
+                "address": "78 E 11400 S, Draper, UT 84020 USA",
+                "zip": "84020",
+                "state_province": "UT",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(801) 553-2150"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.2517574,
+                    26.1853507
+                ]
+            },
+            "properties": {
+                "loc_id": "103",
+                "business_name": "Cycle Gear #71",
+                "company_name": "Cycle Gear #71",
+                "resseller_type": "",
+                "address": "4834 N. University Dr., Lauderhill, FL 33351 USA",
+                "zip": "33351",
+                "state_province": "FL",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(954) 746-2172"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.326849,
+                    34.505578
+                ]
+            },
+            "properties": {
+                "loc_id": "104",
+                "business_name": "Cycle Gear #72",
+                "company_name": "Cycle Gear #72",
+                "resseller_type": "",
+                "address": "14052 Park Ave, Victorville, CA 92392 USA",
+                "zip": "92392",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(760) 955-2555"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.232047,
+                    36.916255
+                ]
+            },
+            "properties": {
+                "loc_id": "105",
+                "business_name": "Cycle Gear #73",
+                "company_name": "Cycle Gear #73",
+                "resseller_type": "",
+                "address": "1547 E Little Creek Road, Norfolk, VA 23518 USA",
+                "zip": "23518",
+                "state_province": "VA",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(757) 480-5680"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.8529151,
+                    35.1871568
+                ]
+            },
+            "properties": {
+                "loc_id": "106",
+                "business_name": "Cycle Gear #74",
+                "company_name": "Cycle Gear #74",
+                "resseller_type": "",
+                "address": "6343 Summer Avenue Suite 104, Memphis, TN 38134 USA",
+                "zip": "38134",
+                "state_province": "TN",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(901) 371-9692"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.062309,
+                    38.259853
+                ]
+            },
+            "properties": {
+                "loc_id": "109",
+                "business_name": "Cycle Gear #77",
+                "company_name": "Cycle Gear #77",
+                "resseller_type": "",
+                "address": "1525 Holiday Ln, Fairfield, CA 94534 USA",
+                "zip": "94534",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(707) 426-5688"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.1153192,
+                    34.0458813
+                ]
+            },
+            "properties": {
+                "loc_id": "110",
+                "business_name": "Cycle Gear #78",
+                "company_name": "Cycle Gear #78",
+                "resseller_type": "",
+                "address": "817 St. Andrews Rd, Columbia, SC 29210 USA",
+                "zip": "29210",
+                "state_province": "SC",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(803) 750-9294"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.0420108,
+                    44.0773936
+                ]
+            },
+            "properties": {
+                "loc_id": "111",
+                "business_name": "Cycle Gear #79",
+                "company_name": "Cycle Gear #79",
+                "resseller_type": "",
+                "address": "3137 Gateway Street, Springfield, OR 97477 USA",
+                "zip": "97477",
+                "state_province": "OR",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(541) 747-1575"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.012181,
+                    32.854951
+                ]
+            },
+            "properties": {
+                "loc_id": "112",
+                "business_name": "Cycle Gear #80",
+                "company_name": "Cycle Gear #80",
+                "resseller_type": "",
+                "address": "4400 Dorchester Road Suite 115, N. Charleston, SC 29405 USA",
+                "zip": "29405",
+                "state_province": "SC",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(843) 974-6460"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.6445408,
+                    28.0789574
+                ]
+            },
+            "properties": {
+                "loc_id": "113",
+                "business_name": "Cycle Gear #81",
+                "company_name": "Cycle Gear #81",
+                "resseller_type": "",
+                "address": "1400A W. New Haven Ave, West Melbourne, FL 32904 USA",
+                "zip": "32904",
+                "state_province": "FL",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(321) 952-7478"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.8431697,
+                    38.0069988
+                ]
+            },
+            "properties": {
+                "loc_id": "114",
+                "business_name": "Cycle Gear #82",
+                "company_name": "Cycle Gear #82",
+                "resseller_type": "",
+                "address": "4145 Century Blvd, Pittsburg, CA 94565 USA",
+                "zip": "94565",
+                "state_province": "CA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(925) 757-3903"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.5306631,
+                    27.3700758
+                ]
+            },
+            "properties": {
+                "loc_id": "115",
+                "business_name": "Cycle Gear #83",
+                "company_name": "Cycle Gear #83",
+                "resseller_type": "",
+                "address": "4062 N. Washington Blvd., Sarasota, FL 34234 USA",
+                "zip": "34234",
+                "state_province": "FL",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(941) 358-0828"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.5768157,
+                    38.2422446
+                ]
+            },
+            "properties": {
+                "loc_id": "116",
+                "business_name": "Cycle Gear #84",
+                "company_name": "Cycle Gear #84",
+                "resseller_type": "",
+                "address": "215 S. Hurstbourne Parkway Suite 101, Louisville, KY 40222 USA",
+                "zip": "40222",
+                "state_province": "KY",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(502) 426-9746"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.7395262,
+                    34.2789139
+                ]
+            },
+            "properties": {
+                "loc_id": "117",
+                "business_name": "Cycle Gear #85",
+                "company_name": "Cycle Gear #85",
+                "resseller_type": "",
+                "address": "2880 A Cochran Street, Simi Valley, CA 93065 USA",
+                "zip": "93065",
+                "state_province": "CA",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(805) 527-9801"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.4809693,
+                    40.5717926
+                ]
+            },
+            "properties": {
+                "loc_id": "118",
+                "business_name": "Cycle Gear #86",
+                "company_name": "Cycle Gear #86",
+                "resseller_type": "",
+                "address": "2229 Lehigh Street, Allentown, PA 18103 USA",
+                "zip": "18103",
+                "state_province": "PA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(610) 791-9880"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.068425,
+                    29.193746
+                ]
+            },
+            "properties": {
+                "loc_id": "119",
+                "business_name": "Cycle Gear #87",
+                "company_name": "Cycle Gear #87",
+                "resseller_type": "",
+                "address": "1808 W. International Speedway Blvd #404, Daytona Beach, FL 32114 USA",
+                "zip": "32114",
+                "state_province": "FL",
+                "": "10",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(386) 257-0242"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.846799,
+                    36.0393199
+                ]
+            },
+            "properties": {
+                "loc_id": "120",
+                "business_name": "Cycle Gear #88",
+                "company_name": "Cycle Gear #88",
+                "resseller_type": "",
+                "address": "3407 High Point Road Suite 'A', Greensboro, NC 27407 USA",
+                "zip": "27407",
+                "state_province": "NC",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(336) 297-4250"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.392823,
+                    38.734627
+                ]
+            },
+            "properties": {
+                "loc_id": "121",
+                "business_name": "Cycle Gear #89",
+                "company_name": "Cycle Gear #89",
+                "resseller_type": "",
+                "address": "10897 Saint Charles Rock Road, Bridgeton, MO 63074 USA",
+                "zip": "63074",
+                "state_province": "MO",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(314) 298-7222"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.9871014,
+                    41.2785966
+                ]
+            },
+            "properties": {
+                "loc_id": "122",
+                "business_name": "Cycle Gear #90",
+                "company_name": "Cycle Gear #90",
+                "resseller_type": "",
+                "address": "53 'B' Boston Post Road, Orange, CT 06477 USA",
+                "zip": "06477",
+                "state_province": "CT",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(203) 891-0716"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.3939425,
+                    33.628013
+                ]
+            },
+            "properties": {
+                "loc_id": "123",
+                "business_name": "Cycle Gear #91",
+                "company_name": "Cycle Gear #91",
+                "resseller_type": "",
+                "address": "15643 North Reems Road Suite 102, Surprise, AZ 85374 USA",
+                "zip": "85374",
+                "state_province": "AZ",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(623) 474-3335"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.3899608,
+                    40.5242082
+                ]
+            },
+            "properties": {
+                "loc_id": "124",
+                "business_name": "Cycle Gear #92",
+                "company_name": "Cycle Gear #92",
+                "resseller_type": "",
+                "address": "2052 Lincoln Highway, Edison, NJ 08817 USA",
+                "zip": "08817",
+                "state_province": "NJ",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(732) 248-7737"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.556688,
+                    45.665823
+                ]
+            },
+            "properties": {
+                "loc_id": "125",
+                "business_name": "Cycle Gear #93",
+                "company_name": "Cycle Gear #93",
+                "resseller_type": "",
+                "address": "11505 NE Fourth Plain Road Suite G3, Vancouver, WA 98662 USA",
+                "zip": "98662",
+                "state_province": "WA",
+                "": "11",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(360) 253-8484"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.95553,
+                    35.078932
+                ]
+            },
+            "properties": {
+                "loc_id": "126",
+                "business_name": "Cycle Gear #94",
+                "company_name": "Cycle Gear #94",
+                "resseller_type": "",
+                "address": "544 North McPherson Church Road, Fayetteville, NC 28303 USA",
+                "zip": "28303",
+                "state_province": "NC",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(910) 860-8200"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -92.0414722,
+                    30.2054619
+                ]
+            },
+            "properties": {
+                "loc_id": "127",
+                "business_name": "Cycle Gear #95",
+                "company_name": "Cycle Gear #95",
+                "resseller_type": "",
+                "address": "2926 Johnston Street, Lafayette, LA 70503 USA",
+                "zip": "70503",
+                "state_province": "LA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(337) 264-0352"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.3272878,
+                    47.6570909
+                ]
+            },
+            "properties": {
+                "loc_id": "128",
+                "business_name": "Cycle Gear #96",
+                "company_name": "Cycle Gear #96",
+                "resseller_type": "",
+                "address": "5727 East Sprague Ave, Spokane, WA 99212 USA",
+                "zip": "99212",
+                "state_province": "WA",
+                "": "7",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(509) 535-4330"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.679422,
+                    35.261254
+                ]
+            },
+            "properties": {
+                "loc_id": "129",
+                "business_name": "Cycle Gear #97",
+                "company_name": "Cycle Gear #97",
+                "resseller_type": "",
+                "address": "445 B Madonna Road, San Luis Obispo, CA 93405 USA",
+                "zip": "93405",
+                "state_province": "CA",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(805) 783-2660"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.3012128,
+                    34.0679613
+                ]
+            },
+            "properties": {
+                "loc_id": "130",
+                "business_name": "Cycle Gear #98",
+                "company_name": "Cycle Gear #98",
+                "resseller_type": "",
+                "address": "11230 Alpharetta Highway Unit 112 & 113, Roswell, GA 30076 USA",
+                "zip": "30076",
+                "state_province": "GA",
+                "": "10",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(770) 752-1820"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -92.340918,
+                    34.742917
+                ]
+            },
+            "properties": {
+                "loc_id": "131",
+                "business_name": "Cycle Gear #99",
+                "company_name": "Cycle Gear #99",
+                "resseller_type": "",
+                "address": "1001 South University Ave, Little Rock, AR 72204 USA",
+                "zip": "72204",
+                "state_province": "AR",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(501) 663-2250"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.665316,
+                    39.631381
+                ]
+            },
+            "properties": {
+                "loc_id": "132",
+                "business_name": "Cycle Gear #100",
+                "company_name": "Cycle Gear #100",
+                "resseller_type": "",
+                "address": "1273 Quintilio Drive, Bear, DE 19701 USA",
+                "zip": "19701",
+                "state_province": "DE",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(302) 832-7270"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -91.0514148,
+                    30.4093087
+                ]
+            },
+            "properties": {
+                "loc_id": "133",
+                "business_name": "Cycle Gear #101",
+                "company_name": "Cycle Gear #101",
+                "resseller_type": "",
+                "address": "4855 South Sherwood Forest Blvd, Baton Rouge, LA 70816 USA",
+                "zip": "70816",
+                "state_province": "LA",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(225) 293-5860"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.316297,
+                    39.9231133
+                ]
+            },
+            "properties": {
+                "loc_id": "134",
+                "business_name": "Cycle Gear #102",
+                "company_name": "Cycle Gear #102",
+                "resseller_type": "",
+                "address": "160 Baltimore Pike, Springfield, PA 19064 USA",
+                "zip": "19064",
+                "state_province": "PA",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(610) 328-9811"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.5602699,
+                    37.0001875
+                ]
+            },
+            "properties": {
+                "loc_id": "135",
+                "business_name": "Cycle Gear #103",
+                "company_name": "Cycle Gear #103",
+                "resseller_type": "",
+                "address": "6920 Chestnut Street Suite E-1, Gilroy, CA 95020 USA",
+                "zip": "95020",
+                "state_province": "CA",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(408) 847-1810"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.713894,
+                    30.188948
+                ]
+            },
+            "properties": {
+                "loc_id": "136",
+                "business_name": "Cycle Gear #104",
+                "company_name": "Cycle Gear #104",
+                "resseller_type": "",
+                "address": "1540 Wells Road Suite 7, Orange Park, FL 32073 USA",
+                "zip": "32073",
+                "state_province": "FL",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(904) 269-3740"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.946219,
+                    40.59973
+                ]
+            },
+            "properties": {
+                "loc_id": "137",
+                "business_name": "Cycle Gear #105",
+                "company_name": "Cycle Gear #105",
+                "resseller_type": "",
+                "address": "4848 William Flynn Highway Unit 3, Allison Park, PA 15101 USA",
+                "zip": "15101",
+                "state_province": "PA",
+                "": "10",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(724) 444-4260"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.1108621,
+                    35.2571916
+                ]
+            },
+            "properties": {
+                "loc_id": "138",
+                "business_name": "Cycle Gear #106",
+                "company_name": "Cycle Gear #106",
+                "resseller_type": "",
+                "address": "3916 E Franklin Blvd Suite 110, Gastonia, NC 28052 USA",
+                "zip": "28052",
+                "state_province": "NC",
+                "": "9",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(704) 824-1820"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -94.727745,
+                    38.963077
+                ]
+            },
+            "properties": {
+                "loc_id": "139",
+                "business_name": "Cycle Gear #108",
+                "company_name": "Cycle Gear #108",
+                "resseller_type": "",
+                "address": "9128 Marshall Dr, Lenexa, KS 66215 USA",
+                "zip": "66215",
+                "state_province": "KS",
+                "": "6",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(913) 307-0420"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.3538159,
+                    38.6650292
+                ]
+            },
+            "properties": {
+                "loc_id": "140",
+                "business_name": "Cycle Gear #109",
+                "company_name": "Cycle Gear #109",
+                "resseller_type": "",
+                "address": "5400 Date Ave, Suite A3, Sacramento, CA 95841 USA",
+                "zip": "95841",
+                "state_province": "CA",
+                "": "8",
+                "country": "USA",
+                "website": "www.cyclegear.com",
+                "email": "customerservice@cyclegear.com",
+                "phone": "(916) 338-1649"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.757286,
+                    40.034664
+                ]
+            },
+            "properties": {
+                "loc_id": "141",
+                "business_name": "Jake Wilson",
+                "company_name": "Jake Wilson",
+                "resseller_type": "",
+                "address": "1551 American Way Payson, UT 84651 USA",
+                "zip": "84651",
+                "state_province": "UT",
+                "": "6",
+                "country": "USA",
+                "website": "http://www.jakewilson.com",
+                "email": "sales@jakewilson.com",
+                "phone": "+1 800 721-8253"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.009962678,
+                    34.19994562
+                ]
+            },
+            "properties": {
+                "loc_id": "142",
+                "business_name": "MotoCrossGiant .com",
+                "company_name": "MotoCrossGiant .com",
+                "resseller_type": "",
+                "address": "4690 Calle Carga, Camarillo, CA 93012",
+                "zip": "93012",
+                "state_province": "Canada",
+                "": "93012",
+                "country": "Canada",
+                "website": "NULL",
+                "email": "NULL",
+                "phone": "NULL"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.962171137,
+                    33.8703999617
+                ]
+            },
+            "properties": {
+                "loc_id": "143",
+                "business_name": "Motorhelmets ",
+                "company_name": "800-288-0640",
+                "resseller_type": "",
+                "address": "1871 W Commonwealth Ave, Fullerton, CA 92833",
+                "zip": "92833",
+                "state_province": "Canada",
+                "": "92833",
+                "country": "Canada",
+                "website": "NULL",
+                "email": "NULL",
+                "phone": "NULL"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.983001,
+                    34.980219
+                ]
+            },
+            "properties": {
+                "loc_id": "144",
+                "business_name": "Compacc.com",
+                "company_name": "Compacc.com",
+                "resseller_type": "",
+                "address": "3049 Southcross Blvd, Rock Hill, SC 29730",
+                "zip": "29730",
+                "state_province": "SEYCHELLES",
+                "": "29730",
+                "country": "SEYCHELLES",
+                "website": "www.compacc.com",
+                "email": "NULL",
+                "phone": "800-543-3535"
+            }
+        }
+    ]
+};
+

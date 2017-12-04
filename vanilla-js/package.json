@@ -1,0 +1,36 @@
+{
+  "name": "store-locator-final",
+  "version": "1.0.0",
+  "description": "A store locator based on the classic [mapbox's example](https://www.mapbox.com/guides/building-a-store-locator/),  but implemented only via leaflet.js",
+  "main": "Leaflet.MakiMarkers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miccferr/leaflet-store-locator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miccferr/leaflet-store-locator/issues"
+  },
+  "homepage": "https://github.com/miccferr/leaflet-store-locator",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0"
+  },
+  "eslintConfig": {
+  "globals": {
+    "window": true,
+    "document": true,
+    "$": true,
+    "L": true,
+    "geojsonFeature": true
+  }
+}
+
+}

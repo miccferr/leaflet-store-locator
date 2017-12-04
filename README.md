@@ -1,7 +1,9 @@
 # leaflet-store-locator
-An ongoing excercise to keep myself update with web-mapping tech. The goal is to produce a store locator based on the classic [mapbox's example](https://www.mapbox.com/guides/building-a-store-locator/),  but implemented via plain Leaflet.js
+An ongoing excercise to keep myself at speed with web-mapping tech.
 
-The most update example will be live [here](http://miccferr.github.io/leaflet-store-locator/)
+ The goal is to produce a store locator based on the classic [mapbox' example](https://www.mapbox.com/guides/building-a-store-locator/),  but implemented via plain Leaflet.js
+
+The most updated example will be live [here](http://miccferr.github.io/leaflet-store-locator/)
 
 ## List of Examples:  
 

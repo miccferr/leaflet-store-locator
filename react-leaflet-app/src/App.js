@@ -4,11 +4,17 @@ import "./App.css";
 import * as initialState from "./data.json";
 import Menu from "./Menu.js";
 import MyMap from "./Map.js";
+import StoreLocMenuContainer from "./StoreLocMenuContainer.js";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: initialState.features, resellerTypeClicked: false };
+    this.state = {
+      data: initialState.features,
+      resellerTypeClicked: false,
+      center: [],
+      zoom: 2,
+    };
     this.handleChange = (type, e) => {
       let newState = [
         ...initialState.features.filter(f => f.properties[type] == e.currentTarget.text),
@@ -16,15 +22,19 @@ class App extends Component {
       this.setState({
         data: newState,
       });
-      // this.state.resellerTypeClicked ? this.handleFlag() : console.log("bod");
     };
-    this.resetState = () => this.setState({ data: initialState.features });
+    this.resetState = () => this.setState({ data: initialState.features, zoom: 2 });
     this.handleFlag = () => {
-      let newClick = !this.state.resellerTypeClicked;
-      console.log("new clicked", this.state.resellerTypeClicked);
-      return this.setState({
-        resellerTypeClicked: newClick,
+      this.setState({
+        resellerTypeClicked: !this.state.resellerTypeClicked,
       });
+    };
+    this.centerOnStore = newCenter => {
+      this.setState({
+        center: [newCenter[1], newCenter[0]],
+        zoom: 12,
+      });
+      console.log("newCenter: ", newCenter);
     };
   }
 
@@ -40,12 +50,22 @@ class App extends Component {
             resetState={this.resetState}
           />
         </header>
-        <div id="map-container">
-          <MyMap
-            data={this.state.data}
-            resellerTypeClicked={this.state.resellerTypeClicked}
-            // handleFlag={this.handleFlag}
-          />
+        <div className="columns">
+          <div className="column is-one-quarter">
+            <h1 id="menu-loc-title" className="item ">
+              Our locations
+            </h1>
+            <StoreLocMenuContainer storeLocs={this.state.data} centerOnStore={this.centerOnStore} />
+          </div>
+          <div className="column" />
+          <div id="map-container">
+            <MyMap
+              data={this.state.data}
+              center={this.state.center}
+              zoom={this.state.zoom}
+              resellerTypeClicked={this.state.resellerTypeClicked}
+            />
+          </div>
         </div>
       </div>
     );

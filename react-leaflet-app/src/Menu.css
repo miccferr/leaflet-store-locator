@@ -1,4 +1,3 @@
-/* @import "../node_modules/tachyons/css/tachyons.css"; */
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -699,3 +698,6 @@ a.navbar-link.is-active {
   z-index: 9999;
   max-height: 200px;
   overflow: scroll; }
+
+#navbarExampleTransparentExample {
+  padding-left: 13%; }

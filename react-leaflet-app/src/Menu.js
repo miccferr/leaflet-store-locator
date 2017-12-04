@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./Menu.css";
 
-// const geoSubMenu = () =>
-const Test = text => <b>{JSON.stringify(text.text)}</b>;
 class Menu extends Component {
   constructor(props) {
     super();
@@ -35,19 +33,35 @@ class Menu extends Component {
           {f}
         </a>
       ));
-      // this.setState({ data: filtered }
       return <div className="navbar-dropdown is-boxed">{items}</div>;
+    };
+    this.createMenuItem = (arr, objKey, i) => {
+      console.log("objKey: ", objKey);
+      console.log("III: ", i);
+      console.log(arr[objKey]);
+      return (
+        <div key={i} className="navbar-item has-dropdown is-hoverable">
+          <a className="navbar-item" href="/documentation/overview/start/">
+            {objKey}
+          </a>
+          {this._createSubMenu(arr[objKey])}
+        </div>
+      );
     };
   }
 
   render() {
+    const menuItems = {
+      Postcode: "zip",
+      Country: "country",
+      "State/Province": "state_province",
+      "Reseller Type": "resseller_type",
+    };
     return (
       <nav className="navbar is-transparent">
         <div className="navbar-brand">
           <h4 className="navbar-item" href="https://bulma.io">
             React Leaflet Store Locator
-            {console.log("PROOOOOPS", this.props)}
-            <Test text={this.props.resellerTypeClicked} />
           </h4>
           <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
             <span />
@@ -57,30 +71,7 @@ class Menu extends Component {
         </div>
 
         <div id="navbarExampleTransparentExample" className="navbar-menu">
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-item" href="/documentation/overview/start/">
-              Postcode
-            </a>
-            {this._createSubMenu("zip")}
-          </div>
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-item" href="/documentation/overview/start/">
-              Country
-            </a>
-            {this._createSubMenu("country")}
-          </div>
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-item" href="/documentation/overview/start/">
-              State/Province
-            </a>
-            {this._createSubMenu("state_province")}
-          </div>
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-item" href="/documentation/overview/start/">
-              Reseller Type
-            </a>
-            {this._createSubMenu("resseller_type")}
-          </div>
+          {Object.keys(menuItems).map((objKey, i) => this.createMenuItem(menuItems, objKey, i))}
           <a className="navbar-item" href="#" onClick={() => this.props.resetState()}>
             Reset Filters
           </a>

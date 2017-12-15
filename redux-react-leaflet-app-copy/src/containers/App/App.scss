@@ -1,0 +1,28 @@
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../../node_modules/bulma/sass/grid/columns.sass";
+
+body,
+html,
+#root,
+.App,
+.columns,
+.column {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.App,
+.columns,
+.column {
+  height: 100%;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 400;
+}
+
+#menu-loc-title {
+  padding-left: 50px;
+}

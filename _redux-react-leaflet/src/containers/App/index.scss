@@ -1,0 +1,12 @@
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../../node_modules/bulma/sass/grid/columns.sass";
+
+body,
+html,
+#root,
+.App,
+.columns,
+.column {
+  height: 100%;
+  font-family: sans-serif;
+}

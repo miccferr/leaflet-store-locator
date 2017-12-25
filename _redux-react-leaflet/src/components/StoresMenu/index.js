@@ -4,8 +4,8 @@ import "./StoresMenu.css";
 class StoresMenu extends Component {
   render() {
     return (
-      <div>
-        <h3 className="stores-header"> Stores List: </h3>
+      <div className="roboto">
+        <h2> Stores List: </h2>
         <span className="center bottom-margin">
           <a className="button is-danger disabled" onClick={() => this.props.resetState()}>
             Reset

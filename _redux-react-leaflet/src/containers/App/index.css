@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -855,7 +856,7 @@ html,
 .columns,
 .column {
   height: 100%;
-  font-family: sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .menu-scroll {
   max-height: 100%;

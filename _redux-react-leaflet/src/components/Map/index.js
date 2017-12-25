@@ -6,7 +6,6 @@ import Markers from "../Markers";
 const position = [51.505, -0.09];
 
 const MyMap = props => {
-  console.log("PPP", props);
   return (
     <Map
       zoomControl={false}

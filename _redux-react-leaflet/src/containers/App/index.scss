@@ -1,5 +1,6 @@
 @import "../../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../../node_modules/bulma/sass/grid/columns.sass";
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
 
 body,
 html,
@@ -9,7 +10,7 @@ html,
 .columns,
 .column {
   height: 100%;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .menu-scroll {

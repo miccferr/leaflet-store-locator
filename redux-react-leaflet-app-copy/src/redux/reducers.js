@@ -1,18 +1,29 @@
 import { createStore } from "redux";
-import * as initialState from "./data.json";
+import * as data from "../../data.json";
 
-function geoCountryList(state = [], action) {
-  let filtered = [...new Set(state.map(f => f.properties.country.toUpperCase()))];
-  return filtered;
-}
+const options = {
+  resellerTypeClicked: false,
+  center: [],
+  zoom: 2,
+};
 
-function menuList(state = initialState.features, action) {
-  switch (action.type) {
-    case "GEO_COUNTRY":
-      return { ...state, ...geoCountryList(state) };
-    default:
-      return state;
-  }
-}
+const initialState = {
+  data,
+  options,
+};
 
-const store = createStore(menuList);
+// function geoCountryList(state = [], action) {
+//   let filtered = [...new Set(state.map(f => f.properties.country.toUpperCase()))];
+//   return filtered;
+// }
+
+// function menuList(state = initialState.features, action) {
+//   switch (action.type) {
+//     case "GEO_COUNTRY":
+//       return { ...state, ...geoCountryList(state) };
+//     default:
+//       return state;
+//   }
+// }
+
+// const store = createStore(menuList);

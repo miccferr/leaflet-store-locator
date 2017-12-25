@@ -30,15 +30,22 @@ function reducer(state = initialState, action) {
   switch (action.type) {
     case "SET_NEW_CENTER":
       const selectedFeature = state.data.features[action.featureIndex];
-      const newCenter = selectedFeature.geometry.coordinates;
-      console.log("newCenter: ", newCenter);
-      console.log("state: ", state);
+      const newCenter = [
+        selectedFeature.geometry.coordinates[1],
+        selectedFeature.geometry.coordinates[0],
+      ];
       return {
         ...state,
         options: {
           ...state.options,
           center: newCenter,
+          zoom: 10,
         },
+      };
+    case "RESET_STATE":
+      return {
+        ...state,
+        ...initialState,
       };
 
     default:

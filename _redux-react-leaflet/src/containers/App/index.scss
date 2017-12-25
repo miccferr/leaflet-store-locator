@@ -5,8 +5,14 @@ body,
 html,
 #root,
 .App,
+#app,
 .columns,
 .column {
   height: 100%;
   font-family: sans-serif;
+}
+
+.menu-scroll {
+  max-height: 100%;
+  overflow: scroll;
 }

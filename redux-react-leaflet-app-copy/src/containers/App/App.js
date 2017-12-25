@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-import * as initialState from "../../data.json";
 import Menu from "../Menu/Menu.js";
 import MyMap from "../../components/Map/Map.js";
 import StoreLocMenu from "../../components/StoreLocMenu/StoreLocMenu.js";
+import { setActiveOption } from "./redux/action-creators";
 
 class App extends Component {
   constructor(props) {

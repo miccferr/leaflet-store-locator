@@ -6,3 +6,7 @@ export function setCenter(featureIndex) {
     featureIndex,
   };
 }
+
+export function resetState() {
+  return { type: "RESET_STATE" };
+}

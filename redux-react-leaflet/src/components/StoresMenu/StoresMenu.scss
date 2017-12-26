@@ -1,0 +1,15 @@
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../../node_modules/bulma/sass/elements/button.sass";
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.bottom-margin {
+  margin-bottom: 20px;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
